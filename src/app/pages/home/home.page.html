@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Uso de Storage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen] ="true">
+  <ion-item>
+     <ion-label position=" floating">Rut</ion-label>
+     <ion-input type="text" [(ngModel)]="usuario.rut" placeholder = "Ingrese su rut"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position=" floating">Nombre</ion-label>
+  <ion-input type="text"[(ngModel)]="usuario.nombre" placeholder = "Ingrese su nombre"></ion-input>
+</ion-item>
+<ion-item>
+<ion-button expand=" block">Ingresar</ion-button>
+  <ion-button (click)="verStorage()">Ver datos Storage</ion-button>
+</ion-item>
+  <ion-header collapse="condense">
+    <ion-button expand=" block">Ingresar</ion-button>
+    
+  </ion-header>
+</ion-content>    
